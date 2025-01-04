@@ -63,5 +63,7 @@ def downloadDataSet():
         print(f"Error downloading dataset: {e}")
 
 if __name__ == "__main__":
+    os.makedirs("data", exist_ok=True)
+    os.makedirs("model", exist_ok=True)
     installRequirements()
     downloadDataSet()
